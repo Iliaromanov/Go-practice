@@ -1,2 +1,2 @@
 # Go-practice
-This repo contains my work as I learn the Go programming language.
+This repo contains the work I do as I learn the Go programming language.
