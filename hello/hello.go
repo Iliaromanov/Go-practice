@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/greetings"
+	"example.com/greetings"
 )
 import "rsc.io/quote"
 

@@ -15,7 +15,8 @@ func HelloFromal(firstName string, lastName string) string {
 }
 
 func HelloInformal(name string) string {
-	var msg string fmt.Sprintf("Hey %v! What's up???", name)
-	msg := fmt.Sprintf("Hey %v! What's up???", name)
+	var msg string
+	msg = fmt.Sprintf("Hey %v!", name)
+	msg += " What's up???"
 	return msg
 }
