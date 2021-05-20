@@ -1,10 +1,15 @@
 package main
 
-import "fmt"
-
+import (
+	"fmt"
+	"github.com/greetings"
+)
 import "rsc.io/quote"
 
 func main() {
-	fmt.Println("Hello, World! (in Go)")
+	messageFormal := greetings.HelloFromal("Ilia", "Romanov")
+	fmt.Println(messageFormal)
+	messageInformal := greetings.HelloInformal("Ilia")
+	fmt.Println(messageInformal)
 	fmt.Println(quote.Go())
 }
