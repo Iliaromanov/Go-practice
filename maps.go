@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func printMap(m map[string]interface{}) {
-	for key := range m {
-		fmt.Printf("'%v': %v\n", key, m[key])
+	for key, val := range m {
+		fmt.Println(key,":", val)
 	}
 }
 
