@@ -2,12 +2,6 @@ package main
 
 import "fmt"
 
-func printMap(m map[string]interface{}) {
-	for key, val := range m {
-		fmt.Println(key,":", val)
-	}
-}
-
 func main() {
 	balances := make(map[string]interface{})
 	balances["Bob"] = 0.25
@@ -28,4 +22,10 @@ func main() {
 	val, ok = langs["SQL"]
 	fmt.Printf("val: %v, ok: %t\n", val, ok) // >> val: , ok: false
 	printMap(langs)// >> map[C:$$$ Go:$$$$$ JavaScript:$$ Python:$$$$$]
+}
+
+func printMap(m map[string]interface{}) {
+	for key, val := range m {
+		fmt.Println(key,":", val)
+	}
 }

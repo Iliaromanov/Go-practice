@@ -5,6 +5,16 @@ import (
 	// Documentation on fmt package: https://golang.org/pkg/fmt/
 )
 
+
+func main() {
+	fmt.Println("This is the start of the program!")
+	countFromTo(0, 5)
+	sevenOdd := isOdd(7) // Assigning to variable
+	fmt.Printf("7 is odd? - %t\n", sevenOdd) // Can pass variable
+	fmt.Printf("8 is odd? - %t\n", isOdd(8)) // Can pass func result directly
+	fmt.Println(makeBox(4, 5))
+}
+
 func countFromTo(start int, end int) {
 	for i := start; i <= end; i++ {
 		fmt.Println(i)
@@ -27,13 +37,4 @@ func makeBox(width int, height int) string {
 	// := determines what type the variable is based on the value thats being assigned
 
 	return box
-}
-
-func main() {
-	fmt.Println("This is the start of the program!")
-	countFromTo(0, 5)
-	sevenOdd := isOdd(7) // Assigning to variable
-	fmt.Printf("7 is odd? - %t\n", sevenOdd) // Can pass variable
-	fmt.Printf("8 is odd? - %t\n", isOdd(8)) // Can pass func result directly
-	fmt.Println(makeBox(4, 5))
 }
