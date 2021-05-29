@@ -14,8 +14,8 @@ func checkEmpty(name string) bool {
 	return name == ""
 }
 
-// Hello returns a greeting for the named person.
-func HelloFromal(firstName string, lastName string) (string, error) {
+// Hello() returns a greeting for the named person.
+func HelloFromal(firstName string, lastName string) (string, error) { // has to be capital to be used in other file
 
 	if checkEmpty(firstName) || checkEmpty(lastName) {
 		return "", errors.New("empty name field")
