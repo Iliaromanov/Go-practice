@@ -1,0 +1,2 @@
+Hello!
+Can you read this in Go?
