@@ -1,8 +1,7 @@
 package main
 
 import (
-	//"fmt"
-	//"bufio"
+	"bufio"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -35,4 +34,11 @@ func main() {
 
 	_, err = f.WriteString("This is third message!!!\n")
 	checkError(err)
+
+	// writing in buffs
+	writer := bufio.NewWriter(f)
+	_, err = writer.WriteString("Final message :(")
+	checkError(err)
+	
+	writer.Flush() // use Flush to persist to disk 
 }
