@@ -1,10 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 type Point struct {
-	x int
-	y int
+	x float64
+	y float64
+}
+
+// defining a method for Point sturct
+func (p *Point) norm() float64 {
+	return math.Sqrt(p.x * p.x + p.y * p.y)
 }
 
 func main() {
@@ -17,8 +25,9 @@ func main() {
 	fmt.Println("i:", *iPtr, "j:", *jPtr) // dereferencing
 
 	// simple struct assignment
-	p := Point{1, 2}
+	p := Point{3, 4}
 	fmt.Println(p, "=> x:", p.x, "y:", p.y)
+	fmt.Println("norm =", p.norm()) // using norm method
 
 	// struct assignment with pointers
 	p1 := Point{3, 4}
@@ -43,7 +52,7 @@ func main() {
 		{"Java", false},
 	}
 
-	for _,val := range langs { // need to put _ to avoid "declared but not used" error
+	for _, val := range langs { // need to put _ to avoid "declared but not used" error
 		if val.known {
 			fmt.Println(val)
 		}
