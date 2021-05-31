@@ -1,0 +1,14 @@
+{
+    "stocks": [
+        {
+            "name":"GME",
+            "shareValue":222.00,
+            "lastUpdate":"05-30-2021"
+        },
+        {
+            "name":"YETI",
+            "shareValue":87.60,
+            "lastUpdate":"05-31-2021"
+        }
+    ]
+}
