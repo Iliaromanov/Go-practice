@@ -1,4 +1,4 @@
-module Go-practice/cobra-CLI-Library
+module github.com/Iliaromanov
 
 go 1.16
 
