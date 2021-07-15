@@ -27,20 +27,13 @@ func remove(target interface{}, arr []interface{}) []interface{} { // Interface 
 	/* removes target from arr and returns new slice with target removed if found
 	   or returns arr if target not found
 	*/
-	i := 0
-	length := len(arr) // cap() can be used to determine the amount of available space in arr
-	fmt.Printf("The length is: %v\n", length)
-	for i < length && arr[i] != target {
-		i++
+	for i, val := range arr {
+		if val == target {
+			new := append(arr[:i], arr[i+1:] ...)
+			return new
+		}
 	}
-	if i == length - 1 { // target not found
-		return arr
-	} 
-	new := arr[:i]
-	for j := i + 1; j < len(arr); j++ {
-		new = append(new, arr[j])
-	}
-	return new
+	return arr
 }
 
 func sliceEquals(nums1 []int, nums2 []int) bool {
