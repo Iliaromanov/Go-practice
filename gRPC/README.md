@@ -38,3 +38,4 @@ service NameOfService {
 }
 ```
   The Request and Response in the above eg. should be defined with the 'message' keyword.
+- Proto files are compiled into Go files
