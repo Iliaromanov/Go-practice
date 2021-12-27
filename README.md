@@ -1,7 +1,13 @@
 # Go-practice
 This repo contains the work I do as I learn the Go programming language.
 
-## Command Line
+## Notes/Useful Commands
+
+- Important env variables:
+
+   `$GOPATH` = location of your workspace.
+   
+   `$GOROOT` = location where installed package information will be stored.
 
 - Create .mod file:
    > `go mod init`
