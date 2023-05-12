@@ -42,6 +42,5 @@ func main() {
 	}
 
 	fmt.Println("resultName:", resultName)
-	
-	fmt.Println("hello!");
+	fmt.Printf("resultName.Name: %v\n", resultName.Name)
 }
